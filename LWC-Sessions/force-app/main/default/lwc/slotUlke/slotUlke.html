@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Slot Ulke Sehir">
+        <lightning-input name="country" type="text" label="Country" onchange={handleChange}></lightning-input>
+        <lightning-input name="city" type="text" label="City" onchange={handleChange}></lightning-input>
+        <lightning-input name="famousFor" type="text" label="Famous For" onchange={handleChange}></lightning-input> 
+        <c-slot-sehir>
+            <span slot="co">{country}</span>
+            <span slot="ci">{city}</span>
+            <span slot="ff">{famousFor}</span>
+        </c-slot-sehir>
+    </lightning-card>
+</template>

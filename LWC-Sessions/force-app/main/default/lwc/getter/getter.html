@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Getter" icon-name="utility:product_transfer">
+        <p>Toplama:{toplama}</p>
+        <p>Cikarma:{cikarma}</p>
+        <p>Carpma:{carpma}</p>
+        <p>Bolme:{bolme}</p>
+
+        <lightning-input type="number" label="Index No" onblur={handleBlur} placeholder="Bir index no giriniz.">
+        </lightning-input>
+        <p>{indexNo}</p>
+        <p>Element Adi: {getElement}</p>
+    </lightning-card>
+</template>

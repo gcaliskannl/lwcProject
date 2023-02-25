@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Student Information">
+<lightning-input type="text" name="fname" label="First Name" onchange={handlerchange}></lightning-input>
+<lightning-input type="text" name="lname" label="Last Name" onchange={handlerchange}></lightning-input>
+<lightning-input type="number" name="batchno" label="Batch Number" onchange={handlerchange}></lightning-input>
+<lightning-input type="number" name="phone" label="Phone Number" onchange={handlerchange}></lightning-input>    
+<p>Student Name:{upperCaseFullName}</p>
+<p>Batch Number:{batchNo}</p>
+<p>Phone:{phone}</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Unnamed Slot Child">
+        <slot></slot>
+        <h1>2.Child Baslik</h1>
+        <p>3.Child Paragraf</p>
+    </lightning-card>
+
+    <lightning-card title="Named Slot Child">
+        <h1>Mother: <slot name="Mother"></slot> </h1>
+        <h2>Father: <slot name="Father"></slot> </h2>
+    </lightning-card>
+</template>

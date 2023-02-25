@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Unnamed Slot Parent">
+        <h1>1.Parent Baslik</h1>
+        <c-slot-child>
+            <div>5.Bu yazi parenttan geliyor</div> 
+            <p>6.Bu yazi parenttan geliyor</p>
+        </c-slot-child>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus similique nobis mollitia a eaque? Quae minima reprehenderit dignissimos velit, accusantium inventore voluptates praesentium officia incidunt consequatur adipisci dicta doloremque blanditiis!</p>
+    </lightning-card>
+
+    <lightning-card title="Named Slot Parent">
+        <c-slot-child>
+            <span slot="Mother">Meltem</span>
+            <span slot="Father">Tugrul</span>
+        </c-slot-child>
+
+        <c-slot-named-child>
+            <span slot="a">Ayse</span>
+            <span slot="b">Mehmet</span>
+            <span slot="c">Ali</span>
+        </c-slot-named-child>
+    </lightning-card>
+</template>

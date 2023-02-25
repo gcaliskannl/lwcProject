@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Iterator">
+        <template iterator:it={customerList}>
+            <li key={it.value}>
+                <div if:true={it.first}>$$$$$$$$$$$$$</div>
+                <ul>{it.value.id}</ul>
+                <ul>{it.value.name}</ul>
+                <ul>{it.value.phone}</ul>
+                <ul>{it.value.email}</ul>
+                <div if:true={it.last}>*************</div>
+            </li>
+        </template>
+    </lightning-card>
+</template>

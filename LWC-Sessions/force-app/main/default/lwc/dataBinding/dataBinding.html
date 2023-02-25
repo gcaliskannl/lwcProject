@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Data Binding">
+        <div>isim:{isim}</div>
+        <input type="text" value="Ali" oninput={handleInput}>
+    </lightning-card>
+    <lightning-card>
+        <div>Soyisim:{soyisim}</div>
+        <lightning-input type="text" onchange={handleChange}></lightning-input>
+    </lightning-card>
+    <lightning-card>
+        <div>ulke:{ulke}</div>
+        <lightning-input type="text" onblur={handleBlur}></lightning-input>
+    </lightning-card>
+</template>
